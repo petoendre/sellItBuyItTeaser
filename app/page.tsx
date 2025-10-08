@@ -70,7 +70,6 @@ export default function Page() {
                 <div className="grid sm:grid-cols-3 gap-3">
                   <input type="text" placeholder="Your name" value={name} onChange={(e)=>setName(e.target.value)} className="input" />
                   <input type="email" placeholder="you@email.com" required value={email} onChange={(e)=>setEmail(e.target.value)} className="input" />
-                  <input type="text" placeholder="Suburb / City" value={suburb} onChange={(e)=>setSuburb(e.target.value)} className="input" />
                   <button type="submit" disabled={status==='loading'} className="sm:col-span-3 btn btn-primary disabled:opacity-60">
                     {status==='loading' ? 'Joining…' : 'Join the Waitlist'}
                   </button>
@@ -199,7 +198,6 @@ export default function Page() {
             <form onSubmit={onSubmit} className="mt-6 max-w-xl mx-auto grid sm:grid-cols-3 gap-3">
               <input className="input" type="text" placeholder="Your name" value={name} onChange={(e)=>setName(e.target.value)} />
               <input className="input" type="email" placeholder="you@email.com" required value={email} onChange={(e)=>setEmail(e.target.value)} />
-              <input className="input" type="text" placeholder="Suburb / City" value={suburb} onChange={(e)=>setSuburb(e.target.value)} />
               <button className="btn btn-primary sm:col-span-3" disabled={status==='loading'}>{status==='loading'?'Joining…':'Get early access'}</button>
             </form>
           )}

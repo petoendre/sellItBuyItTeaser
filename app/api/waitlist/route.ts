@@ -7,7 +7,11 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: false, error: 'Email required' }, { status: 400 })
     }
     // Forward to your provider here if desired:
-    // await fetch(process.env.WAITLIST_WEBHOOK_URL!, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) })
+    await fetch("https://formspree.io/f/mdkwlpzd", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(body),
+});
     return NextResponse.json({ ok: true, received: { ...body, ts: new Date().toISOString() } })
   } catch {
     return NextResponse.json({ ok: false, error: 'Invalid payload' }, { status: 400 })
