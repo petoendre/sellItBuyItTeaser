@@ -5,7 +5,6 @@
 :root { color-scheme: light; }
 body { @apply bg-white text-slate-900; }
 
-/* Nice card & container helpers */
 .container-xl { @apply mx-auto max-w-7xl px-6; }
 .card { @apply rounded-3xl border border-slate-200 bg-white; }
 .badge { @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold; }

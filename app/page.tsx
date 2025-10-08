@@ -25,12 +25,10 @@ export default function Page() {
 
   return (
     <main className="min-h-screen bg-white">
-      {/* Top strip */}
       <div className="w-full text-center text-xs sm:text-sm bg-gradient-to-r from-primary to-secondary text-white py-2">
         Soft launch in South Australia · Join the early access list
       </div>
 
-      {/* Header */}
       <header className="container-xl py-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="h-9 w-9 rounded-xl bg-primary grid place-items-center font-black text-slate-900">S</div>
@@ -45,7 +43,6 @@ export default function Page() {
         </nav>
       </header>
 
-      {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute -top-24 -left-24 h-72 w-72 bg-primary/20 rounded-full blur-3xl" />
         <div className="absolute -bottom-24 -right-24 h-72 w-72 bg-secondary/20 rounded-full blur-3xl" />
@@ -58,7 +55,6 @@ export default function Page() {
               Simple listings. Clean browsing. Secure payments with escrow‑style protection. List for free — buyer pays a small transparent amount at checkout.
             </p>
 
-            {/* Inline signup */}
             <form onSubmit={onSubmit} className="mt-8 max-w-xl">
               {status === 'success' ? (
                 <div className="p-4 rounded-xl bg-green-50 border border-green-200 text-green-800">
@@ -79,7 +75,6 @@ export default function Page() {
             </form>
           </div>
 
-          {/* Mock phone preview */}
           <div className="relative">
             <div className="absolute -inset-6 rounded-3xl bg-gradient-to-tr from-primary/10 via-secondary/10 to-transparent blur-xl" />
             <div className="relative rounded-[2rem] border border-slate-200 bg-white shadow-2xl p-5 w-[320px] sm:w-[360px] mx-auto">
@@ -104,7 +99,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* About */}
       <section id="about" className="section">
         <div className="container-xl grid gap-8 lg:grid-cols-2 items-start">
           <div>
@@ -131,7 +125,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Features */}
       <section id="features" className="container-xl pb-8">
         <h2 className="h2">Features</h2>
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -151,7 +144,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* How it works */}
       <section id="how" className="section">
         <div className="container-xl card p-8">
           <h2 className="h2">How it works</h2>
@@ -167,7 +159,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Waitlist CTA */}
       <section id="waitlist" className="container-xl pb-20">
         <div className="card p-8 sm:p-12 text-center bg-gradient-to-br from-slate-50 to-white">
           <h2 className="h2">Be amongst the first</h2>
@@ -190,7 +181,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section id="faq" className="container-xl pb-24">
         <h2 className="h2">FAQ</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -210,7 +200,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="border-t border-slate-200/80 py-10">
         <div className="container-xl grid gap-6 sm:grid-cols-2 lg:grid-cols-3 items-start text-sm text-slate-600">
           <div>
