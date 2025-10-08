@@ -86,20 +86,41 @@ export default function Page() {
             <div className="relative rounded-[2rem] border border-slate-200 bg-white shadow-2xl p-5 w-[320px] sm:w-[360px] mx-auto">
               <div className="rounded-xl bg-slate-100 border border-slate-200 p-4">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="h-8 w-24 rounded-lg bg-slate-200" />
-                  <div className="h-8 w-8 rounded-lg bg-slate-200" />
+                  <Image
+    src="/logo.jpg"
+    alt="Sell It Buy It logo"
+    width={50}
+    height={50}
+    className="rounded-xl object-cover"
+  />
+  <div className="mt-3 text-center small">Your Search Result</div>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
-                  {[1,2,3,4,5,6].map((i)=> (
-                    <div key={i} className="rounded-xl border border-slate-200 bg-white p-3">
-                      <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-slate-200 to-slate-300 mb-3" />
-                      <div className="h-3 w-24 bg-slate-200 rounded mb-1" />
-                      <div className="h-3 w-16 bg-slate-200 rounded" />
-                    </div>
-                  ))}
-                </div>
+  {[
+    {src: '/previews/bike.jpg', title: 'Mountain Bike', price: '$240'},
+    {src: '/previews/sofa.jpg', title: '2-Seater Sofa', price: '$150'},
+    {src: '/previews/phone.jpg', title: 'iPhone 13 Pro', price: '$780'},
+    {src: '/previews/laptop.jpg', title: 'MacBook Air', price: '$990'},
+    {src: '/previews/lamp.jpg', title: 'Vintage Lamp', price: '$35'},
+    {src: '/previews/sneakers.jpg', title: 'Nike Air Max', price: '$85'},
+  ].map((item) => (
+    <div key={item.src} className="rounded-xl border border-slate-200 bg-white p-3 hover:shadow transition">
+      <div className="aspect-[4/3] rounded-lg overflow-hidden mb-3">
+        <Image
+          src={item.src}
+          alt={item.title}
+          width={300}
+          height={225}
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="font-medium text-slate-800 truncate">{item.title}</div>
+      <div className="text-sm text-emerald-600 font-semibold">{item.price}</div>
+    </div>
+  ))}
+</div>
               </div>
-              <div className="mt-3 text-center small">App preview — subject to change</div>
+              <div className="mt-3 text-center small">App preview</div>
             </div>
           </div>
         </div>
