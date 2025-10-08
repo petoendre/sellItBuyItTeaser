@@ -1,4 +1,4 @@
-// File: C:\Users\epeto\Downloads\SELL IT BUY IT\sellitbuyit-teaser-vercel-vercelfix\app\layout.tsx
+// File: C:\Projects\sellItBuyItTeaser\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

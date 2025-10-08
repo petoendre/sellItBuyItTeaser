@@ -1,4 +1,4 @@
-// File: C:\Users\epeto\Downloads\SELL IT BUY IT\sellitbuyit-teaser-vercel-vercelfix\app\page.tsx
+// File: C:\Projects\sellItBuyItTeaser\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

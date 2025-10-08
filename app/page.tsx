@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 export default function Page() {
   const [name, setName] = useState('')
@@ -31,9 +32,14 @@ export default function Page() {
 
       <header className="container-xl py-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-9 w-9 rounded-xl bg-primary grid place-items-center font-black text-slate-900">S</div>
-          <span className="font-semibold">Sell It Buy It</span>
-        </div>
+  <Image
+    src="/logo.jpg"
+    alt="Sell It Buy It logo"
+    width={100}
+    height={100}
+    className="rounded-xl object-cover"
+  />
+</div>
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-600">
           <a href="#about" className="hover:text-slate-900">About</a>
           <a href="#features" className="hover:text-slate-900">Features</a>
@@ -203,10 +209,15 @@ export default function Page() {
       <footer className="border-t border-slate-200/80 py-10">
         <div className="container-xl grid gap-6 sm:grid-cols-2 lg:grid-cols-3 items-start text-sm text-slate-600">
           <div>
-            <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-xl bg-primary grid place-items-center font-black text-slate-900">S</div>
-              <span className="font-semibold">Sell It Buy It</span>
-            </div>
+            <div className="flex items-center gap-3">
+  <Image
+    src="/logo.jpg"
+    alt="Sell It Buy It logo"
+    width={100}
+    height={100}
+    className="rounded-xl object-cover"
+  />
+</div>
             <p className="mt-2 max-w-sm">Keeping great finds in the loop. © {new Date().getFullYear()} Sell It Buy It Pty Ltd</p>
           </div>
           <div>
