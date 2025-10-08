@@ -215,7 +215,7 @@ export default function Page() {
             ['What can I list?','Pre‑owned and handmade goods. A clear prohibited‑items policy applies.'],
             ['Who pays at checkout?','Buyers pay a small, transparent amount; sellers list for free.'],
             ['How do payouts work?','Funds are held until tracking confirms delivery, then released.'],
-            ['Mobile or web?','iOS & Android at launch; web browsing to follow.'],
+            ['Mobile or web?','Both at launch.'],
             ['Crypto at launch?','Exploring compliance; cards and wallets first.'],
             ['Where do you launch?','South Australia pilot, then national rollout once KPIs look great.'],
           ].map(([q,a]) => (
